@@ -1,0 +1,84 @@
+﻿/* set background image, text color and center alignement */
+body {
+    background-image: url("../Content/images/img.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-size: cover;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+/* move away from the edges, set background color of the header and opacity */
+.heading {
+    padding: 10px 20px 10px 20px;
+    background-color: rgb(46, 75, 42);
+    opacity: 0.9;
+}
+
+/* title font */
+h1 {
+    font-family: 'Bernard MT';
+}
+
+/* description text size */
+h2 {
+    font-size: 20px;
+}
+
+/* setting all buttons styles */
+.button {
+    width: 100px;
+    height: 30px;
+    border: hidden;
+    outline: 0;
+}
+
+/* color of buttons when hovered */
+.button:hover {
+    background-color: rgb(46, 75, 42);
+    cursor: pointer;
+}
+
+/* middle content size, spacing, background color and opacity */
+.questions {
+    height: 550px;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.9;
+}
+
+/* bottom content size, spacing, background color and opacity */
+.answers {
+    height: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(46, 75, 42);
+    opacity: 0.9;
+}
+
+/* text label size */
+.answerTextLabel {
+    font-size: 15px;
+}
+
+/* results label size */
+.answerLabel {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* set auto height when screen smaller than 992px */
+@media (max-width: 992px) {
+    .questions{
+        height: auto;
+    }
+    .answers {
+        height: auto;
+    }
+}
