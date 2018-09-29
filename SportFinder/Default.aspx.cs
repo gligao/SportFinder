@@ -44,11 +44,13 @@ namespace SportFinder
 
         }
 
-        //when Start button is pressed, first question appear and start button becomes invisible
+        //when Start button is pressed, first question appears and start button becomes invisible
         protected void StartBtn_Click(object sender, EventArgs e)
         {
             MultiView1.ActiveViewIndex = 0;
             StartBtn.Visible = false;
+            Title1Label.Visible = false;
+            Title2Label.Visible = true;
         }
 
         //on Team button pressed, second question apears
