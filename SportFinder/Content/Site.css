@@ -17,6 +17,17 @@ body {
     opacity: 0.9;
 }
 
+/* set title link color */
+.heading a{
+    color: rgb(255, 255, 255);
+}
+
+/* set link hover options */
+.heading a:hover {
+    text-decoration: none;
+    text-shadow: 0 0 6px rgb(255, 255, 255), 0 0 6px rgb(255, 255, 255);
+}
+
 /* title font */
 h1 {
     font-family: 'Bernard MT';
