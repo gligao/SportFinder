@@ -2,19 +2,25 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-    <div class="container heading">
-        <h1>Sport Finder</h1>
-        <h2>Playing sports is a favorite activity for many people around the world. It provides us with enjoyment and also freshens up our mind. 
-            Indulging in sports helps our body function smoothly and more efficiently. Sports involve the activity of each and every muscle in our body. 
-            This strengthens the body and promotes good health.
-        </h2>
-        <h2>
-            This test helps you understand what kind of activity you should go for. When you are ready please press Start and select an answer from the following questions.
-        </h2>
-    </div>
-
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
+            <div class="container heading">
+                <a href="Default.aspx"><h1>Sport Finder</h1></a>
+                <h2>
+                    <asp:Label ID="Title1Label" runat="server" Text="Label">
+                        Playing sports is a favorite activity for many people around the world. It provides us with enjoyment and also freshens up our mind. 
+                        Indulging in sports helps our body function smoothly and more efficiently. Sports involve the activity of each and every muscle in our body. 
+                        This strengthens the body and promotes good health.
+                        <br />
+                        This test helps you understand what kind of sport activity you should go for based on some questions.
+                        <br />
+                        Please press <b>Start</b> to begin.
+                    </asp:Label>
+                    <asp:Label ID="Title2Label" runat="server" Text="Label" Visible="false">
+                        Select an answer from the following questions, click the title to <b>reset</b> or <b>go back</b> anytime by selecting a different answer.   
+                    </asp:Label>
+                </h2>
+            </div>
             <div class="container">
                 <div class="row questions">
                     <div class="col-sm-12">               
@@ -22,7 +28,7 @@
 
                         <asp:MultiView ID="MultiView1" runat="server">
                             <asp:View ID="View1" runat="server">
-                                <asp:Label ID="Option1Lbl" runat="server" Text="Label">In team sport, working together and relying on teammates are qualities worth fostering. 
+                                <asp:Label ID="Option1Lbl" runat="server" Text="Label"><br /> team sport, working together and relying on teammates are qualities worth fostering. 
                                     In individual sport, the ability to rely on yourself and a discipline to keep yourself accountable are critical for success.
                                     Wich sport would you like to begin with?
                                 </asp:Label>
